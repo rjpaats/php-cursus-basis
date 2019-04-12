@@ -15,4 +15,11 @@ $y      =   21;
 $sum    =   $x + $y;
 echo    $sum, "\n\n";
 
+echo"En nu met line breaks de leesbaarheid, php negeerd dit omdat de ; de line break is\n";
+$x      =   1;
+$y      =   21;
+$sum    =   $x +
+            $y;
+echo    $sum, "\n\n";
+
 ?>
