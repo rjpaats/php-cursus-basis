@@ -41,3 +41,39 @@ $getal  =   0377;   // Octaal, getal begint met een 0 (Cyfer Null!!)
 // FLOATING POINT variabele bevatten een comma in het getal. (Punt vanwege die gekke americanen!!)
 $mijn_variabele =   20.34;
 $mijn_variabele =   -20.34;
+
+// Boolian variabels bevatten twee states True of False
+$getrouwd = true;
+$getrouwd = false;
+// Letop dat je Bolians niet kan printen!! true geeft een "1" als output en false geeft "" als output!
+
+// Een leege variabel kan je initialiseren met een NULL waarde wat leeg betekend.
+$heelveelgeld = NULL;
+
+// Met var_dump kan je de iegen schappen van een variabel dumpen zodat je de exacte state kan onderzoeken.
+var_dump($heelveelgeld);
+var_dump($mijn_variabele);
+var_dump($getrouwd);
+var_dump($getal);
+var_dump($mijn_variabele);
+
+// Door NULL te gebruiken als je nog niet weet wat je wilt toekennen voorkom je problemen met niet gedeclareerde variabele.
+if (is_null($naam)) {
+    echo 'naam heeft nog geen waarde...';
+} else {
+    echo $naam;
+}
+
+// Een array in PHP $naam-variable[] tussen de blokhaken kan je de index ID opnemen om de betreffende index uit te lezen.
+$weekend = 'Zaterdag';  // index = 0
+$weekend = 'Zondag';    // index = 1
+$weekend = 'Maandag';   // index = 2
+$weekend = 'Dinsdag';   // index = 3
+$weekend = 'Woensdag';  // index = 4
+$weekend = 'Donderdag'; // index = 5
+$weekend = 'Vrijdag';   // index = 6
+
+echo $weekend[2];       // Print de string Maandag uit op het scherm.
+
+
+
